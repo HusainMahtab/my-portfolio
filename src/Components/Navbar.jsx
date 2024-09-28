@@ -3,7 +3,7 @@ import {Link} from "react-scroll"
 import { IoMenuOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 function Navbar() {
-    const [showMobileNav,setShowMobileNav]=useState(false)
+    const [showMobileNav,setShowMobileNav]=useState(true)
   return (
     <>
     <div className='w-full flex justify-between items-center p-4 px-12 border-b-2 border-b-green-600 '>
@@ -20,19 +20,19 @@ function Navbar() {
          <div className='flex gap-2 font-semibold text-lg'> 
          <ul className='hidden md:flex gap-8 text-lg'>
                     <li className='p-3 hover:bg-green-600 hover:text-white cursor-pointer'>
-                        <Link to="Home" smooth={true} duration={500}>Home</Link>
+                        <Link to="Home" smooth={true} duration={500} offset={-70}>Home</Link>
                     </li>
                     <li className='p-3 hover:bg-green-600 hover:text-white cursor-pointer'>
-                        <Link to="About" smooth={true} duration={500}>About</Link>
+                        <Link to="About" smooth={true} duration={500} offset={-70}>About</Link>
                     </li>
                     <li className='p-3 hover:bg-green-600 hover:text-white cursor-pointer'>
-                        <Link to="Experiance" smooth={true} duration={500}>Experiance</Link>
+                        <Link to="Experiance" smooth={true} duration={500} offset={-70}>Experiance</Link>
                     </li>
                     <li className='p-3 hover:bg-green-600 hover:text-white cursor-pointer'>
-                        <Link to="Portfolio" smooth={true} duration={500}>Portfolio</Link>
+                        <Link to="Portfolio" smooth={true} duration={500} offset={-70}>Portfolio</Link>
                     </li>
                     <li className='p-3 hover:bg-green-600 hover:text-white cursor-pointer'>
-                        <Link to="Contact" smooth={true} duration={500}>Contact</Link>
+                        <Link to="Contact" smooth={true} duration={500} offset={-70}>Contact</Link>
                     </li>
                 </ul>
          </div>
@@ -48,19 +48,19 @@ function Navbar() {
          <div className='lg:hidden flex flex-col h-screen items-center justify-center text-green-600 gap-6 font-bold text-2xl'>
          <ul className='flex flex-col items-center p-4'>
                     <li className='py-2'>
-                        <Link to="Home" smooth={true} duration={500} onClick={() => setShowMobileNav(false)}>Home</Link>
+                        <Link to="Home" smooth={true} duration={500} offset={-70} onClick={() => setShowMobileNav(true)}>Home</Link>
                     </li>
                     <li className='py-2'>
-                        <Link to="About" smooth={true} duration={500} onClick={() => setShowMobileNav(false)}>About</Link>
+                        <Link to="About" smooth={true} duration={500} offset={-70} onClick={() => setShowMobileNav(true)}>About</Link>
                     </li>
                     <li className='py-2'>
-                        <Link to="Portfolio" smooth={true} duration={500} onClick={() => setShowMobileNav(false)}>Portfolio</Link>
+                        <Link to="Portfolio" smooth={true} duration={500} offset={-70} onClick={() => setShowMobileNav(true)}>Portfolio</Link>
                     </li>
                     <li className='py-2'>
-                        <Link to="Experiance" smooth={true} duration={500} onClick={() => setShowMobileNav(false)}>Experiance</Link>
+                        <Link to="Experiance" smooth={true} duration={500} offset={-70} onClick={() => setShowMobileNav(true)}>Experiance</Link>
                     </li>
                     <li className='py-2'>
-                        <Link to="Contact" smooth={true} duration={500} onClick={() => setShowMobileNav(false)}>Contact</Link>
+                        <Link to="Contact" smooth={true} duration={500} offset={-70} onClick={() => setShowMobileNav(true)}>Contact</Link>
                     </li>
                 </ul>
          </div>

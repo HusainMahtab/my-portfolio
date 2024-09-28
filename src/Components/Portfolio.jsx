@@ -35,6 +35,7 @@ function Portfolio() {
             projectLink:"https://crypto-currency-app-bay-nine.vercel.app/coins",
              githubLink:"https://github.com/HusainMahtab/CryptoCurrencyApp"
         },
+        
     ]
   return (
     <Element name="Portfolio" className='w-full border border-b-green-600 p-4'>

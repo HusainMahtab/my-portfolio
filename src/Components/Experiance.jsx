@@ -36,6 +36,11 @@ function Experiance() {
       id:7,
       imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSTVjZgtLF2vqZV3Nh6VdLV5HEZ3xOyVCRuw&s",
       name:"HTML-5"
+    },
+    {
+      id:8,
+      imageUrl:"https://cdn.worldvectorlogo.com/logos/react-1.svg",
+      name:"ReactJs"
     }
   ]
   return (
