@@ -3,7 +3,10 @@ import { Element } from 'react-scroll'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function ContactMe() {
-    const message=()=>toast("message send to mahtab successfully")
+    const handleMessage=(e)=>{
+       e.preventDefault()
+       toast.success("message send to mahtab successfully")
+    }
   return (
     <Element name="Contact" className='p-4'>
         <h1 className="text-lg font-bold">Contact Me</h1>
@@ -22,8 +25,16 @@ function ContactMe() {
                     <input type="text" id='message' placeholder='Enter Your Message' required className='p-2 bg-slate-200'/>
                 </div>
                 <div className='p-2'>
-                  <button className='w-full p-2 bg-green-600 text-white hover:bg-green-700 font-bold rounded-lg mt-2'>Send</button>
-                  <ToastContainer/>
+                  <button className='w-full p-2 bg-green-600 text-white hover:bg-green-700 font-bold rounded-lg mt-2' onClick={handleMessage}>Send</button>
+                  <ToastContainer  position="top-center" 
+                     autoClose={5000} 
+                     hideProgressBar={false} 
+                     newestOnTop={false} 
+                     closeOnClick 
+                     rtl={false} 
+                     pauseOnFocusLoss 
+                     draggable 
+                     pauseOnHover/>
                 </div>
             </form>
         </div>
