@@ -21,9 +21,8 @@ function Home() {
             <h1 className='text-lg font-bold'>Hello,I'm a 
             <TypeAnimation
                sequence={[
-              // Same substring at the start will only be typed out once, initially
              "Programmer",
-             1000, // wait 1s before replacing "Mice" with "Hamsters"
+             1000, 
              "Developer",
              1000,
              "MERN Developer",
@@ -35,8 +34,8 @@ function Home() {
             repeat={Infinity}
           />
             </h1>
-            <p className='text-justify text-lg md:text-md'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
-            <div className='w-full grid md:flex justify-between items-center p-2 gap-4 md:gap-8'>
+            <p className='text-xl font-semibold md:text-lg'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
+            <div className='w-full grid md:flex justify-between items-center p-2 gap-3 md:gap-8'>
                 <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Available on</p>
                     <div className='w-[300px] flex justify-center gap-8 items-center text-4xl md:text-2xl'>
@@ -53,6 +52,7 @@ function Home() {
                       <SiExpress className=''/>
                       <FaReact className=''/>
                       <FaNodeJs className=''/>
+                      
                     </div>
                 </div>
             </div>
