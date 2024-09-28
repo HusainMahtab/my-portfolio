@@ -12,7 +12,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 function Home() {
   return (
-    <div name="Home" className='w-full md:flex justify-between gap-20 items-center p-4 py-6 border border-b-green-600 pb-2'>
+    <div name="Home" className='w-full md:flex justify-between gap-20 items-center p-4 py-6 border border-b-green-600 pb-2 pt-28'>
        <div className="w-full flex justify-center md:hidden">
              <img src={image} alt="my-image" className='rounded-full w-[400px]'/>
         </div>

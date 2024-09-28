@@ -1,6 +1,9 @@
 import React from 'react'
 import { Element } from 'react-scroll'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function ContactMe() {
+    const message=()=>toast("message send to mahtab successfully")
   return (
     <Element name="Contact" className='p-4'>
         <h1 className="text-lg font-bold">Contact Me</h1>
@@ -20,6 +23,7 @@ function ContactMe() {
                 </div>
                 <div className='p-2'>
                   <button className='w-full p-2 bg-green-600 text-white hover:bg-green-700 font-bold rounded-lg mt-2'>Send</button>
+                  <ToastContainer/>
                 </div>
             </form>
         </div>

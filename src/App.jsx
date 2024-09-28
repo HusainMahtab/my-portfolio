@@ -1,4 +1,4 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -11,7 +11,10 @@ function App() {
   return (
     <Router>
       <div>
-        <Navbar />
+        <Navbar/>
+        <Routes>
+          
+        </Routes>
         {/* Use Element to wrap each section for smooth scrolling */}
         <Element name="Home" className="element">
           <Home />

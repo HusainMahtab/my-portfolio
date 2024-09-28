@@ -53,7 +53,7 @@ function Experiance() {
               experianceArray.map((item,index)=>( 
                 <div key={item.id} className=''>
                   <div className='md:max-w-[250px] grid justify-center shadow shadow-green-600 p-4 md:rounded-md rounded-t-3xl rounded-b-3xl'>
-                    <img src={item.imageUrl} alt={item.name} className='md:w-[300px] md:h-[200px] w-64 h-52 mix-blend-multiply' /> 
+                    <img src={item.imageUrl} alt={item.name} className='md:w-[300px] md:h-[200px] w-64 h-52' /> 
                     <p className='text-lg font-bold text-center text-slate-400 p-2'>{item.name}</p>   
                   </div>
                 </div>
