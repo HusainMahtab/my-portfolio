@@ -35,7 +35,7 @@ function Home() {
           />
             </h1>
             <p className='text-lg md:text-xl font-semibold pr-4'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
-            <div className='w-full grid md:flex justify-between items-center p-2 gap-3 md:gap-8'>
+            <div className='w-full grid md:flex justify-between items-center p-2 gap-3 bg-red-500 pr-4 md:gap-8'>
                 <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Available on</p>
                     <div className='w-[300px] flex justify-center gap-8 items-center text-4xl md:text-2xl'>
@@ -45,9 +45,9 @@ function Home() {
                         <Link onClick={()=>window.open("https://www.facebook.com/mahtab.husain.1401/","_blank",'noopener,noreferrer')}><FaFacebookSquare className='cursor-pointer hover:scale-125 duration-500'/></Link>
                     </div>
                 </div>
-                <div className='w-full'>
+                <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Currently working on</p>
-                    <div className='w-full flex justify-evenly items-center text-4xl md:text-2xl'>
+                    <div className='w-full flex justify-between items-center text-4xl md:text-2xl'>
                       <SiMongodb className=''/>
                       <SiExpress className=''/>
                       <FaReact className=''/>
