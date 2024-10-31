@@ -13,8 +13,8 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div name="Home" className='w-full md:flex justify-between gap-20 md:gap-10 items-center py-6 border border-b-green-600 pb-2 pt-28'>
-       <div className="w-full flex justify-center md:hidden">
-             <img src={image} alt="my-image" className='rounded-full md:p-4 md:w-[200px] w-[400px]'/>
+       <div className="w-full flex justify-center md:p-6 md:hidden">
+             <img src={image} alt="my-image" className='rounded-full md:w-[200px] w-[400px]'/>
         </div>
         <div className="w-full grid gap-3 p-4 ">
             <p className='font-semibold'>Welcome in My Feed</p>
