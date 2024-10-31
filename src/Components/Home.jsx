@@ -47,7 +47,7 @@ function Home() {
                 </div>
                 <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Currently working on</p>
-                    <div className='w-full flex justify-between items-center text-4xl md:text-2xl'>
+                    <div className='w-full flex justify-between items-center md:px-0 px-8 text-4xl md:text-2xl'>
                       <SiMongodb className=''/>
                       <SiExpress className=''/>
                       <FaReact className=''/>
