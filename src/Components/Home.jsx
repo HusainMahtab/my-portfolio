@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div name="Home" className='w-full md:flex justify-between gap-20 items-center border border-b-green-600 pb-2 pt-28 pr-6'>
-       <div className="w-full flex justify-center md:hidden">
+       <div className="w-full flex justify-center md:hidden p-6">
              <img src={image} alt="my-image" className='rounded-full w-[400px]'/>
         </div>
         <div className="w-full grid gap-3 p-6">
