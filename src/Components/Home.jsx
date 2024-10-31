@@ -14,7 +14,7 @@ function Home() {
   return (
     <div name="Home" className='w-full md:flex justify-between gap-20 md:gap-10 items-center py-6 border border-b-green-600 pb-2 pt-28'>
        <div className="w-full flex justify-center md:hidden">
-             <img src={image} alt="my-image" className='rounded-full md:w-[200px] w-[400px]'/>
+             <img src={image} alt="my-image" className='rounded-full md:p-4 md:w-[200px] w-[400px]'/>
         </div>
         <div className="w-full grid gap-3 p-4 ">
             <p className='font-semibold'>Welcome in My Feed</p>
@@ -34,7 +34,7 @@ function Home() {
             repeat={Infinity}
           />
             </h1>
-            <p className='text-xl font-semibold md:text-md'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
+            <p className='text-xl font-semibold md:text-md md:p-6'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
             <div className='w-full grid md:flex justify-between items-center p-2 gap-3 md:gap-8'>
                 <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Available on</p>
