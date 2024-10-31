@@ -12,13 +12,13 @@ import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-router-dom';
 function Home() {
   return (
-    <div name="Home" className='w-full md:flex justify-between gap-20 md:gap-10 items-center py-6 border border-b-green-600 pb-2 pt-28'>
-       <div className="w-full flex justify-center md:p-6 md:hidden">
-             <img src={image} alt="my-image" className='rounded-full md:w-[200px] w-[400px]'/>
+    <div name="Home" className='w-full md:flex justify-between gap-20 items-center border border-b-green-600 pb-2 pt-28 pr-6'>
+       <div className="w-full flex justify-center md:hidden">
+             <img src={image} alt="my-image" className='rounded-full w-[400px]'/>
         </div>
-        <div className="w-full grid gap-3 p-4 ">
+        <div className="w-full grid gap-3 p-6">
             <p className='font-semibold'>Welcome in My Feed</p>
-            <h1 className='text-lg font-bold'>Hello,I'm a 
+            <h1 className='text-md font-bold'>Hello,I'm a 
             <TypeAnimation
                sequence={[
              "Programmer",
@@ -34,7 +34,7 @@ function Home() {
             repeat={Infinity}
           />
             </h1>
-            <p className='text-xl font-semibold md:text-md md:p-6 md:px-12'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
+            <p className='text-xl font-semibold'>Over 3 month of hands-on internship experience in full-stack development.Proficient in diverse projects including a E-Commerce Management System,E-Learning Back-End System,School-WebApp,Successfully intergrated payment systems like Razorpay.</p>
             <div className='w-full grid md:flex justify-between items-center p-2 gap-3 md:gap-8'>
                 <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Available on</p>
@@ -47,7 +47,7 @@ function Home() {
                 </div>
                 <div className=''>
                     <p className='font-semibold font-sans p-2 text-xl md:text-lg text-center'>Currently working on</p>
-                    <div className='w-full flex justify-between items-center text-4xl md:p-8 md:text-2xl'>
+                    <div className='w-full flex justify-evenly items-center text-4xl md:text-2xl'>
                       <SiMongodb className=''/>
                       <SiExpress className=''/>
                       <FaReact className=''/>
