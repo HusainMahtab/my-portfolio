@@ -11,7 +11,7 @@ function ContactMe() {
     <Element name="Contact" className='p-4'>
         <h1 className="text-lg font-bold">Contact Me</h1>
         <div className="w-full flex justify-center items-center p-2">
-            <form className="w-[500px] shadow shadow-green-600 p-4">
+            <form className="w-[500px] shadow shadow-green-600 p-4" type="submit">
                 <div className='grid gap-2 p-2'>
                     <label htmlFor="name" className='p-2'>Name:</label>
                     <input type="text" id='name' placeholder='Enter Name' autofocus required className='p-2 bg-slate-200'/>
