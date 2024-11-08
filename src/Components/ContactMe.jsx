@@ -14,7 +14,7 @@ function ContactMe() {
             <form className="w-[500px] shadow shadow-green-600 p-4">
                 <div className='grid gap-2 p-2'>
                     <label htmlFor="name" className='p-2'>Name:</label>
-                    <input type="text" id='name' placeholder='Enter Name' required className='p-2 bg-slate-200'/>
+                    <input type="text" id='name' placeholder='Enter Name' autofocus required className='p-2 bg-slate-200'/>
                 </div>
                 <div className='grid gap-2 p-2'>
                     <label htmlFor="email" className='p-2'>Email:</label>
@@ -25,7 +25,6 @@ function ContactMe() {
                     <input type="text" id='message' placeholder='Enter Your Message' required className='p-2 bg-slate-200'/>
                 </div>
                 <div className='p-2'>
-                  <button className='w-full p-2 bg-green-600 text-white hover:bg-green-700 font-bold rounded-lg mt-2' onClick={handleMessage}>Send</button>
                   <ToastContainer  position="top-center" 
                      autoClose={5000} 
                      hideProgressBar={false} 
@@ -36,6 +35,7 @@ function ContactMe() {
                      draggable 
                      pauseOnHover/>
                 </div>
+                  <button className='w-full p-2 bg-green-600 text-white hover:bg-green-700 font-bold rounded-lg mt-2' onClick={handleMessage}>Send</button>
             </form>
         </div>
     </Element>
